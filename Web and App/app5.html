@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjust Your Budget</title>
+  <a href="app4.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .back-icon,
+    .menu-icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Navigation Tabs */
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      color: #d9534f;
+      font-weight: bold;
+      border-bottom: 2px solid #d9534f;
+    }
+
+    /* Budget Overview */
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Budget Adjustment Bars */
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background-color: #eee;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .progress-bar .filled {
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .progress-red {
+      width: 70%;
+      background-color: #d9534f;
+    }
+
+    .progress-blue {
+      width: 30%;
+      background-color: #5bc0de;
+    }
+
+    /* Fee Calculator Button */
+    .fee-button {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .fee-button button {
+      background-color: #d9534f;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .fee-button button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Footer Navigation */
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer-nav .nav-item {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer-nav .nav-item.active {
+      color: #d9534f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="back-icon"></div>
+    <h1 class="title">Adjust Your Budget</h1>
+    <div class="menu-icon"></div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <div class="tab active">Settings</div>
+    <div class="tab">Help</div>
+    <div class="tab">Feedback</div>
+  </div>
+
+  <!-- Budget Overview -->
+  <section>
+    <h2 class="section-title">Budget Overview</h2>
+
+    <div class="card">
+      <h3>Housing</h3>
+      <p>Current Budget: $1200</p>
+      <p>Spent: $950</p>
+    </div>
+
+    <div class="card">
+      <h3>Food</h3>
+      <p>Current Budget: $500</p>
+      <p>Spent: $450</p>
+    </div>
+  </section>
+
+  <!-- Budget Adjustment -->
+  <section>
+    <h2 class="section-title">Budget Adjustment</h2>
+
+    <div class="progress-bar">
+      <div class="filled progress-red"></div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="filled progress-blue"></div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="filled progress-red"></div>
+    </div>
+  </section>
+
+  <!-- Contractor Rate -->
+
+    <button><a href="app6.html" class="fee-button">Fee Calculator</a></button>
+    
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer class="footer-nav">
+    <div class="nav-item active">Budget Overview</div>
+    <div class="nav-item">Transactions</div>
+    <div class="nav-item">Reports</div>
+    <div class="nav-item">Settings</div>
+  </footer>
+</body>
+</html>

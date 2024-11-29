@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor Fee Calculator</title>
+  <a href="app5.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .menu-icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Input Section */
+    .input-section {
+      margin-bottom: 20px;
+    }
+
+    .input-section label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .input-section input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Add Rate Button */
+    .add-rate {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .add-rate button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .add-rate button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Tax Calculation Section */
+    .tax-section {
+      margin-bottom: 20px;
+    }
+
+    .tax-section h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .tax-section .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .tax-section .tax-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .tax-section .tax-row label {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .tax-section .tax-row span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #d9534f;
+    }
+
+    /* Reset Calculator Button */
+    .reset-calculator {
+      text-align: center;
+    }
+
+    .reset-calculator button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .reset-calculator button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Fee Calculator Button */
+    .fee-button {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .fee-button button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .fee-button button:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1 class="title">Contractor Fee Calculator</h1>
+    <div class="menu-icon"></div>
+  </header>
+
+  <!-- Contractor Rate Input -->
+  <section class="input-section">
+    <label for="rate">Enter Rate:</label>
+    <input type="text" id="rate" placeholder="$0.00">
+    <div class="add-rate">
+      <button>Add Rate</button>
+    </div>
+  </section>
+
+  <!-- Tax Calculation -->
+  <section class="tax-section">
+    <h3>Tax Calculation</h3>
+    <div class="card">
+      <div class="tax-row">
+        <label>Total Fees:</label>
+        <span>$1,200</span>
+      </div>
+      <div class="tax-row">
+        <label>Tax Percentage:</label>
+        <span>15%</span>
+      </div>
+      <div class="tax-row">
+        <label>Total Taxes:</label>
+        <span>$180</span>
+      </div>
+      <div class="tax-row">
+        <label>Sales Tax:</label>
+        <span>$120</span>
+      </div>
+      <div class="tax-row">
+        <label>Service Tax:</label>
+        <span>$60</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reset Calculator Button -->
+  <div >
+
+    <button><a href="app6.html" class="reset-calculator">Reset Calculator</a></button>
+  </div>
+
+  <!-- Contractor Fees Button -->
+  <button><a href="app7.html" class="fee-button">Fee Calculator</a></button>
+</body>
+</html>

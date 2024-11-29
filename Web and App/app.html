@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Estimation Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    /* Search Bar */
+    .search {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation Buttons */
+    .navigation {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .nav-btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .red-btn {
+      background-color: #d9534f;
+      color: #fff;
+    }
+
+    .red-btn:hover {
+      background-color: #c9302c;
+    }
+
+    /* Notifications Section */
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .notification-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .notification {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .notification h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .notification p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .notification small {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* Footer Navigation */
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer-nav .nav-item {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer-nav .nav-item.active {
+      color: #d9534f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="title">Project Estimation Dashboard</h1>
+    <div class="icon"></div>
+  </header>
+
+  <!-- Search Bar -->
+  <input type="text" class="search" placeholder="Search Estimates">
+
+  <!-- Navigation Buttons -->
+  <section class="navigation">
+    <a href="app2.html" class="nav-btn red-btn">View Material Cost</a>
+    <a href="app3.html" class="nav-btn red-btn">Cost Estimation Compared</a>
+    
+  </section>
+
+  <!-- Real-Time Notifications -->
+  <section class="notifications">
+    <h2 class="section-title">Real-Time Notifications</h2>
+    <div class="notification-list">
+      <div class="notification">
+        <h3>New Estimate Alert</h3>
+        <p>A new cost estimate has been saved for the "Downtown Office Project".</p>
+        <small>2 hours ago</small>
+      </div>
+      <div class="notification">
+        <h3>Estimate Updated</h3>
+        <p>The cost estimate for "Green Park Renovation" has been updated.</p>
+        <small>5 hours ago</small>
+      </div>
+      <div class="notification">
+        <h3>Estimate Review</h3>
+        <p>Review the updated estimate for "Central Plaza Development".</p>
+        <small>1 day ago</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Navigation -->
+  <footer class="footer-nav">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item">Estimates</div>
+    <div class="nav-item">Reports</div>
+    <div class="nav-item">Settings</div>
+  </footer>
+</body>
+</html>

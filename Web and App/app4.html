@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cost Estimate Comparison</title>
+  <a href="app3.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .settings-icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    /* Search Bar */
+    .search {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    /* Cost Details Section */
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card button {
+      background-color: #d9534f;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Budget Overview Button */
+    .budget-button {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .budget-button button {
+      background-color: #d9534f;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .budget-button button:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="title">Cost Estimate Comparison</h1>
+    <div class="settings-icon"></div>
+  </header>
+
+  <!-- Search Bar -->
+  <input type="text" class="search" placeholder="Search budget scenarios...">
+
+  <!-- Cost Details -->
+  <section>
+    <h2 class="section-title">Cost Details</h2>
+
+    <div class="card">
+      <h3>Materials</h3>
+      <p>Scenario A: $12,000</p>
+      <p>Difference: +$500</p>
+      <button>Export</button>
+    </div>
+
+    <div class="card">
+      <h3>Labor</h3>
+      <p>Scenario A: $8,000</p>
+      <p>Difference: -$300</p>
+      <button>Save</button>
+    </div>
+
+    <div class="card">
+      <h3>Equipment</h3>
+      <p>Scenario A: $5,500</p>
+      <p>Difference: +$200</p>
+      <button>Export</button>
+    </div>
+  </section>
+
+  <!-- Budget Overview Button -->
+
+    <button><a href="app5.html" class="budget-button">Check Budget</a></button>
+    
+  </div>
+</body>
+</html>

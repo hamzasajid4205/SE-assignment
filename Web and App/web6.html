@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User List</title>
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Home Renovators</h1>
+      <a href="web4.html" class="back-btn">Back</a>
+    </header>
+
+    <section class="filters">
+      <input type="text" placeholder="Filter by location" class="filter-input">
+      <input type="text" placeholder="Search users by name" class="search-input">
+      <select class="sort-dropdown">
+        <option value="default">Sort by</option>
+        <option value="name">Name</option>
+        <option value="role">Role</option>
+        <option value="location">Location</option>
+      </select>
+    </section>
+
+    <section class="user-list">
+      <h2>User List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Location</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>New York</td>
+            <td>
+              <select>
+                <option>Admin</option>
+                <option>Editor</option>
+                <option>Viewer</option>
+              </select>
+            </td>
+            <td>
+              <button class="action-btn edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+            <td>987-654-3210</td>
+            <td>Los Angeles</td>
+            <td>
+              <select>
+                <option>Editor</option>
+                <option>Admin</option>
+                <option>Viewer</option>
+              </select>
+            </td>
+            <td>
+              <button class="action-btn view-btn">View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Michael Johnson</td>
+            <td>michaelj@example.com</td>
+            <td>555-123-4567</td>
+            <td>Chicago</td>
+            <td>
+              <select>
+                <option>Viewer</option>
+                <option>Admin</option>
+                <option>Editor</option>
+              </select>
+            </td>
+            <td>
+              <button class="action-btn edit-btn">Edit</button>
+            </td>
+          </tr>
+          <!-- Additional rows omitted for brevity -->
+        </tbody>
+      </table>
+    </section>    
+    <a href="web7.html" class="more-options-btn">More Options</a>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

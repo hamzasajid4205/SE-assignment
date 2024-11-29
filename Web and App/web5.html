@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Role Management</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Home Renovators</h2>
+    <ul>
+      <li class="active">Home</li>
+      <li>Admin</li>
+      <li>UI Elements</li>
+      <li>Apps</li>
+      <li>Pages</li>
+      <li>Charts</li>
+    </ul>
+    <div class="user-profile">
+      <p>Hamza</p>
+      <a href="web3.html">View profile</a>
+    </div>
+  </div>
+  <div class="main-content">
+    <header>
+      <button class="profile-btn">Profile</button>
+    </header>
+    <section class="role-management">
+      <h1>Role Management</h1>
+      <p>Manage Your Staff</p>
+      <p>This section allows you to oversee and assign roles to your team members effectively.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Role ID</th>
+            <th>Role Name</th>
+            <th>Notification Setting</th>
+            <th>Users Assigned</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Admin</td>
+            <td>
+              <select>
+                <option>Enabled</option>
+                <option>Disabled</option>
+              </select>
+            </td>
+            <td>5</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Editor</td>
+            <td>
+              <select>
+                <option>Disabled</option>
+                <option>Enabled</option>
+              </select>
+            </td>
+            <td>3</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Viewer</td>
+            <td>
+              <select>
+                <option>Enabled</option>
+                <option>Disabled</option>
+              </select>
+            </td>
+            <td>10</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>Moderator</td>
+            <td>
+              <select>
+                <option>Enabled</option>
+                <option>Disabled</option>
+              </select>
+            </td>
+            <td>7</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="add-role-btn">+ Add Role</button>
+      <form>
+        <input type="text" placeholder="Role" />
+        <input type="text" placeholder="User" />
+        <select>
+          <option>Enabled</option>
+          <option>Disabled</option>
+        </select>
+        <button type="submit">Save New Role</button>
+      </form>
+      <div class="links">
+        <a href="web6.html" class="user-list-btn">User list</a>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

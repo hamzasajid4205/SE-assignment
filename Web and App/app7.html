@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor Fees</title>
+  <a href="app6.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu-icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    /* Input Section */
+    .input-section {
+      margin-bottom: 20px;
+    }
+
+    .input-section label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .input-section input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 12px;
+    }
+
+    .calculate-button {
+      text-align: center;
+    }
+
+    .calculate-button button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .calculate-button button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Results Section */
+    .results-section {
+      margin-bottom: 20px;
+    }
+
+    .results-section h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .results-section p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .results-section .tax-breakdown {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    /* Real-Time Updates Button */
+    .real-time-button {
+      text-align: center;
+    }
+
+    .real-time-button button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .real-time-button button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Footer Navigation */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 16px;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer button {
+      background: none;
+      border: none;
+      font-size: 14px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .footer button.active {
+      color: #d9534f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="title">Contractor Fees</h1>
+    <div class="menu-icon"></div>
+  </header>
+
+  <!-- Contractor Fee & Tax Input -->
+  <section class="input-section">
+    <label for="base-rate">Base Contractor Rate</label>
+    <input type="text" id="base-rate" placeholder="$0.00">
+
+    <label for="total-hours">Total Hours or Projects</label>
+    <input type="text" id="total-hours" placeholder="Enter total hours or projects">
+
+    <label for="additional-costs">Additional Costs</label>
+    <input type="text" id="additional-costs" placeholder="$0.00">
+
+    <label for="tax-rate">Tax Rate (%)</label>
+    <input type="text" id="tax-rate" placeholder="Enter tax rate percentage">
+
+    <div class="calculate-button">
+      <button>Calculate</button>
+    </div>
+  </section>
+
+  <!-- Calculation Results -->
+  <section class="results-section">
+    <h3>Calculation Results</h3>
+    <p>Total Contractor Fees: $5000</p>
+    <p>Total Taxes: $750</p>
+    <p>Grand Total: $5750</p>
+
+    <div class="tax-breakdown">
+      <p>Detailed Tax Breakdown:</p>
+      <p>Federal Tax: $500</p>
+      <p>State Tax: $250</p>
+    </div>
+
+    <div class="calculate-button">
+      <button>Calculate</button>
+    </div>
+  </section>
+
+  <!-- Real-Time Updates Button -->
+  
+    <button></button><a href="app8.html" class="real-time-button">Real-Time Cost Updates</a></button>
+ 
+
+  <!-- Footer Navigation -->
+  <!-- <footer class="footer">
+    <button>Home</button>
+    <button class="active">Calculate</button>
+    <button>History</button>
+    <button>Settings</button>
+  </footer> -->
+</body>
+</html>

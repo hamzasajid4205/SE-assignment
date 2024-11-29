@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Cost Updates</title>
+  <a href="app7.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .settings-icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    /* Notifications Section */
+    .notification {
+      margin-bottom: 12px;
+    }
+
+    .notification h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 0 4px;
+    }
+
+    .notification p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .notification span {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* Cost Summary Section */
+    .cost-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .cost-card h4 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .cost-card p {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .cost-card span {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* Export Button */
+    .export-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .export-button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .export-button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Footer Navigation */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 16px;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer button {
+      background: none;
+      border: none;
+      font-size: 14px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .footer button.active {
+      color: #d9534f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Real-Time Cost Updates</h1>
+    <div class="settings-icon"></div>
+  </header>
+
+  <!-- Live Notifications Section -->
+  <section>
+    <h2 class="section-title">Live Notifications</h2>
+
+    <div class="notification">
+      <h3>Cost Surge</h3>
+      <p>Material X price increased by 5%.</p>
+      <span>2 minutes ago</span>
+    </div>
+
+    <div class="notification">
+      <h3>Price Update</h3>
+      <p>Material Y price decreased by 3%.</p>
+      <span>10 minutes ago</span>
+    </div>
+  </section>
+
+  <!-- Cost Summary Section -->
+  <section>
+    <h2 class="section-title">Cost Summary</h2>
+
+    <div class="cost-card">
+      <h4>Materials Update</h4>
+      <p>Cost for steel has increased by 5%.</p>
+      <span>2 minutes ago</span>
+    </div>
+
+    <div class="cost-card">
+      <h4>Labor Update</h4>
+      <p>Overtime rates have decreased by 3%.</p>
+      <span>5 minutes ago</span>
+    </div>
+  </section>
+
+  <!-- Export Section -->
+  <div >
+     <button></button><a href="app9.html" class="export-button">Export Cost</a></button>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer class="footer">
+    <button>Home</button>
+    <button class="active">Cost Updates</button>
+    <button>Notifications</button>
+    <button>API Sync</button>
+    <button>Settings</button>
+  </footer>
+</body>
+</html>

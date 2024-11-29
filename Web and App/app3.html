@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cost Estimate Comparison</title>
+  <a href="app.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header .settings {
+      width: 40px;
+      height: 40px;
+      background-color: #ddd;
+      border-radius: 50%;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .criteria button {
+      background-color: #f1f1f1;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .criteria button:hover {
+      background-color: #ddd;
+    }
+    .scenario {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: #fff;
+    }
+    .scenario .thumbnail {
+      width: 60px;
+      height: 60px;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-left: auto;
+    }
+    .scenario p {
+      margin: 5px 0;
+    }
+    .scenario p.title {
+      font-weight: bold;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .actions button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .actions .details-btn {
+      background-color: #d9534f;
+      color: #fff;
+    }
+    .actions .details-btn:hover {
+      background-color: #c9302c;
+    }
+    .actions .export-btn {
+      background-color: #5bc0de;
+      color: #fff;
+    }
+    .actions .export-btn:hover {
+      background-color: #31b0d5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cost Estimate Comparison</h1>
+    <div class="settings"></div>
+  </header>
+
+  <input type="text" placeholder="Search budget scenarios...">
+
+  <h2>Comparison Criteria</h2>
+  <div class="criteria">
+    <button>Project Type</button>
+    <button>Location</button>
+    <button>Time Frame</button>
+  </div>
+
+  <h2>Budget Scenarios Overview</h2>
+  <div class="scenario">
+    <div>
+      <p class="title">Urban Scenario</p>
+      <p>Urban planning budget focusing on infrastructure and public transport.</p>
+    </div>
+    <div class="thumbnail"></div>
+  </div>
+
+  <div class="scenario">
+    <div>
+      <p class="title">Agriculture Scenario</p>
+      <p>Agricultural development budget for enhancing rural infrastructure.</p>
+    </div>
+    <div class="thumbnail"></div>
+  </div>
+
+  <div class="scenario">
+    <div>
+      <p class="title">Tech Scenario</p>
+      <p>Technology investment budget focusing on digital infrastructure.</p>
+    </div>
+    <div class="thumbnail"></div>
+  </div>
+
+  <div class="actions">
+     <button><a href="app4.html" class="details-btn">Cost Details</a></button>
+    <button class="export-btn">Export to PDF</button>
+  </div>
+</body>
+</html>

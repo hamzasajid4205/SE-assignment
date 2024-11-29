@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Cost Estimates</title>
+  <a href="app8.html" class="back-btn">Back</a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .close-icon {
+      width: 24px;
+      height: 24px;
+      background-color: #ddd;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    /* Export Format Section */
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .export-options {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .export-options button {
+      flex: 1;
+      padding: 12px;
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .export-options button:hover {
+      background-color: #c9302c;
+    }
+
+    /* Customization Section */
+    .customization {
+      margin-bottom: 20px;
+    }
+
+    .toggle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .toggle-label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .toggle-switch::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: white;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-switch.active {
+      background-color: #d9534f;
+    }
+
+    .toggle-switch.active::before {
+      transform: translateX(20px);
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .checkbox-group label {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .checkbox-group input {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Export Button */
+    .export-button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .export-button:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Export Cost Estimates</h1>
+    <div class="close-icon">X</div>
+  </header>
+
+  <!-- Export Format Section -->
+  <section>
+    <h2 class="section-title">Export Format</h2>
+    <div class="export-options">
+      <button>PDF</button>
+      <button>Excel</button>
+      <button>Printable</button>
+    </div>
+  </section>
+
+  <!-- Customization Section -->
+  <section class="customization">
+    <h2 class="section-title">Customization</h2>
+    <div class="toggle-container">
+      <span class="toggle-label">Headers</span>
+      <div class="toggle-switch" id="header-toggle"></div>
+    </div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" checked> Project Name</label>
+      <label><input type="checkbox" checked> Date</label>
+      <label><input type="checkbox"> Logo</label>
+    </div>
+    <div class="toggle-container">
+      <span class="toggle-label">Footers</span>
+      <div class="toggle-switch" id="footer-toggle"></div>
+    </div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" checked> Page Numbers</label>
+      <label><input type="checkbox"> Notes</label>
+      <label><input type="checkbox"> Signature Lines</label>
+    </div>
+  </section>
+
+  <!-- Export Button -->
+  <button class="export-button">Export</button>
+
+  <script>
+    // Toggle switches
+    document.querySelectorAll('.toggle-switch').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
